@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Poppins"
+}
+
+#menu {
+display: none;
+position: fixed;
+    top:2vw;
+    right:2vw;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+}
+#menu div {
+    background-color: black;
+    width: 6vw;
+    height:1vw;
+    margin-bottom: 1vw;
+    border-radius: 5vw;
+
+}
+#navbar {
+    position:fixed;
+    width: 100%;
+    top:0px;
+    left:0px;
+    padding:1.2vw;
+    box-shadow: 0px 0px 6px grey;
+    background-color: white;
+z-index: 1;
+
+}
+
+#navlabel {
+    float: left
+}
+
+#navlist {
+    margin: 0;
+    padding: 0;
+    float: right;
+
+}
+
+#navlist li {
+    display: inline;
+    margin-left:1vw
+
+}
+
+#navbar a {
+    text-decoration: none;
+    color:black;
+padding:0.8vw;
+    letter-spacing: 3px
+}
+#navlabel a:hover {
+    background-color: cadetblue;
+    color:white;
+    border-radius: 0.5vw;}
+
+#navlist a:hover {
+    background-color: black;
+    color:white;
+    border-radius: 0.5vw;
+}
+
+#home {
+    display: flex;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    background-image: url("bg.jpg");
+height:100vh;
+    background-size  :auto 100% ;
+    background-repeat: no-repeat;
+background-position: center}
+
+
+.section {
+width:100%;
+    padding:1.5vw
+}
+
+.section h2 {
+    margin-top:7vh;
+    padding-bottom: 1vw;
+    border-bottom:1px solid palegoldenrod;
+}
+
+#projthumbs {
+  width:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+justify-content: space-between;
+}
+
+#projthumbs div {
+    width:24%;
+    margin-bottom: 5vh;
+position: relative;
+}
+
+#projthumbs p {
+    position:absolute;
+    top:0px;
+    left:0px;
+    color: white;
+    background-color: black;
+    margin:0px;
+    padding:1vw
+}
+
+#projthumbs img {
+    width:100%;
+object-fit: cover;
+}
+
+#about .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width:25%;
+    margin-bottom: 5vw;
+}
+.card img {
+    width:100%
+}
+
+.cardname {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.cardtask {
+    color:darkgray;
+}
+
+.cardlink {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: darkgrey;
+    padding: 2vh 0;
+}
+.cardlink:visited {color: black}
+
+#contact input {
+    display: block;
+    width:100%;
+    margin-bottom: 2vh;
+    padding: 2vh;
+    border: 1px solid darkgrey;
+}
+
+#contact input[type=submit] {
+    background-color: black;
+    color: white;
+}
+
+footer {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    background-image: url("map.jpg");
+    background-repeat: no-repeat;
+   height:40vh;
+    overflow:hidden;
+
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height:100%;
+    opacity: 0.8;
+color:white
+}
+
+@media screen and (max-width: 600px){
+h1 {font-size: 5vw}
+    #navlist {display: flex;float: none;flex-direction: row;flex-wrap: nowrap;justify-content: space-between}
+
+    #projthumbs div, .card {width: 100%;}
+
+   #navlabel {display: none}
+}
+
+@media screen and (max-height:500px) {
+    #home {
+        background-image: none;
+        background-color: white;
+        color:black
+    }
+}
